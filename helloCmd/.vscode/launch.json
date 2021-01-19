@@ -2,34 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         { 
-            "name": "Attach to Maya 2018",
+            "name": "Attach to Maya 2020",
             "type": "cppdbg",
             "request": "attach",
-            "program": "/Applications/Autodesk/Maya2018/Maya.app/Contents/bin/maya",
-            "processId": "${command:pickProcess}",
-            "MIMode": "lldb"
-        },
-        { 
-            "name": "Attach to Maya 2017",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "/Applications/Autodesk/Maya2017/Maya.app/Contents/bin/maya",
-            "processId": "${command:pickProcess}",
-            "MIMode": "lldb"
-        },
-        { 
-            "name": "Attach to Maya 2016.5",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "/Applications/Autodesk/Maya2016.5/Maya.app/Contents/bin/maya",
-            "processId": "${command:pickProcess}",
-            "MIMode": "lldb"
-        },
-         { 
-            "name": "Attach to Maya 2016",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "/Applications/Autodesk/Maya2016/Maya.app/Contents/bin/maya",
+            "program": "/Applications/Autodesk/maya2020/Maya.app/Contents/bin/maya",
             "processId": "${command:pickProcess}",
             "MIMode": "lldb"
         }

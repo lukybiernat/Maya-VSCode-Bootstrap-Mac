@@ -5,10 +5,9 @@
     "command": "make",
     "type": "shell",
     "echoCommand": true,
-    "suppressTaskName": true,
     "tasks": [
         {
-            "taskName": "clean",
+            "label": "clean",
             "args": [
                 "clean"
             ],
@@ -19,128 +18,18 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "taskName": "Build for Maya 2016",
+            "label": "Build for Maya 2020",
             "options": {
                 "env": {
-                    "mayaVersion": "2016",
-                    "MAYA_LOCATION": "/Applications/Autodesk/maya2016/Maya.app/Contents",
-                    "DEVKIT_LOCATION": "/Applications/Autodesk/maya2016",
-                    "XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode/6.1.1/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk",
-                    "TARGET_CLANG_VERSION": "version 6.0",
-                    "XCODE_PATH": "/Applications/Xcode/6.1.1/Xcode.app/Contents/Developer/",
+                    "mayaVersion": "2020",
+                    "MAYA_LOCATION": "/Applications/Autodesk/maya2020/Maya.app/Contents",
+                    "DEVKIT_LOCATION": "/Applications/Autodesk/maya2020",
+                    "XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
+                    "TARGET_CLANG_VERSION": "version 12.0.0",
+                    "XCODE_PATH": "/Applications/Xcode.app/Contents/Developer/",
                     "PROJECT_NAME": "${workspaceRootFolderName}",
-                    "INITIALIZE_SYMBOL": "__Z16initializePlugin7MObject",
-                    "UNINITIALIZE_SYMBOL" : "__Z18uninitializePlugin7MObject",
-                    "CXX_LIB_FLAG" : "-stdlib=libstdc++",
-                    "EXTRA_ARCH_FLAG": "-DREQUIRE_IOSTREAM"
-                }
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
-        },
-        {
-            "taskName": "Build for maya 2016.5",
-            "options": {
-                "env": {
-                    "mayaVersion": "2016.5",
-                    "MAYA_LOCATION": "/Applications/Autodesk/maya2016.5/Maya.app/Contents",
-                    "DEVKIT_LOCATION": "/Applications/Autodesk/maya2016.5",
-                    "XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode/6.1.1/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk",
-                    "TARGET_CLANG_VERSION": "version 6.0",
-                    "XCODE_PATH": "/Applications/Xcode/6.1.1/Xcode.app/Contents/Developer/",
-                    "PROJECT_NAME": "${workspaceRootFolderName}",
-                    "INITIALIZE_SYMBOL": "__Z16initializePlugin7MObject",
-                    "UNINITIALIZE_SYMBOL" : "__Z18uninitializePlugin7MObject",
-                    "CXX_LIB_FLAG" : "-stdlib=libstdc++",
-                    "EXTRA_ARCH_FLAG": "-DREQUIRE_IOSTREAM"
-                }
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
-        },
-        {
-            "taskName": "Build for Maya 2017",
-            "options": {
-                "env": {
-                    "mayaVersion": "2017",
-                    "MAYA_LOCATION": "/Applications/Autodesk/maya2017/Maya.app/Contents",
-                    "DEVKIT_LOCATION": "/Applications/Autodesk/maya2017",
-                    "XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode/6.1.1/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk",
-                    "TARGET_CLANG_VERSION": "version 6.0",
-                    "XCODE_PATH": "/Applications/Xcode/6.1.1/Xcode.app/Contents/Developer/",
-                    "PROJECT_NAME": "${workspaceRootFolderName}",
-                    "INITIALIZE_SYMBOL": "__Z16initializePlugin7MObject",
-                    "UNINITIALIZE_SYMBOL" : "__Z18uninitializePlugin7MObject",
-                    "CXX_LIB_FLAG" : "-std=c++11 -stdlib=libc++"
-                }
-            },
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": [
-                    "relative",
-                    "${workspaceRoot}"
-                ],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
-        },
-        {
-            "taskName": "Build for Maya 2018",
-            "options": {
-                "env": {
-                    "mayaVersion": "2018",
-                    "MAYA_LOCATION": "/Applications/Autodesk/maya2018/Maya.app/Contents",
-                    "DEVKIT_LOCATION": "/Applications/Autodesk/maya2018",
-                    "XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode/7.3.1/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk",
-                    "TARGET_CLANG_VERSION": "version 7.3.0",
-                    "XCODE_PATH": "/Applications/Xcode/7.3.1/Xcode.app/Contents/Developer/",
-                    "PROJECT_NAME": "${workspaceRootFolderName}",
-                    "INITIALIZE_SYMBOL": "__Z16initializePluginN8Autodesk4Maya16OpenMaya201800007MObjectE",
-                    "UNINITIALIZE_SYMBOL" : "__Z18uninitializePluginN8Autodesk4Maya16OpenMaya201800007MObjectE",
+                    "INITIALIZE_SYMBOL": "__Z16initializePluginN8Autodesk4Maya16OpenMaya202000007MObjectE",
+                    "UNINITIALIZE_SYMBOL" : "__Z18uninitializePluginN8Autodesk4Maya16OpenMaya202000007MObjectE",
                     "CXX_LIB_FLAG" : "-std=c++11 -stdlib=libc++"
                 }
             },
