@@ -4,4 +4,8 @@ Clone it. When you are creating a new project, create a subfolder and copy makef
 
 Check out our blog on around the corner for more details.
 
-Private fork for MacOS 11.1 on the m1 chip with XCode 12. For now might by buggy but I was able to build the example helloCmd example. Surprisingly seems to work although Autodesk requires Xcode 10.2.1.
+Updated setup for Maya 2020 on MacOS 11.1 with Xcode 12. Tested on the M1 Chip.
+Maya 2020.4
+Xcode 12.3
+Clang 12.0.0
+MacOSX11.1.sdk
