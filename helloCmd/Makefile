@@ -33,7 +33,7 @@ endif
 #
 
 SRCDIR := .
-DSTDIR := $(OUTPUTDIR)
+DSTDIR := $(BUILDDIR)
 
 SOURCES  := $(wildcard *.cpp) $(wildcard **/*.cpp)
 OBJECTS  := $(addprefix $(OBJDIR)/,$(patsubst %.cpp, %.o, $(SOURCES)))
@@ -81,7 +81,7 @@ depend_mayaProject :
 
 clean_mayaProject:
 	-rm -rf $(OBJBASEDIR)
-	-rm -rf $(OUTPUTBASEDIR)
+	-rm -rf $(BUILDBASEDIR)
 
 Clean_mayaProject:
 	-rm -f $(MAKEFILE).bak $(OBJECTS) $(PLUGIN)
