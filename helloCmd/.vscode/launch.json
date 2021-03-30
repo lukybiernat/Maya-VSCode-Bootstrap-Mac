@@ -1,13 +1,21 @@
-{   
-    "version": "0.2.0",
-    "configurations": [
-        { 
-            "name": "Attach to Maya 2020",
-            "type": "cppdbg",
-            "request": "attach",
-            "program": "/Applications/Autodesk/maya2020/Maya.app/Contents/bin/maya",
-            "processId": "${command:pickProcess}",
-            "MIMode": "lldb"
-        }
-    ]
+{
+	"version": "0.2.0",
+	"configurations": [
+		{ 
+			"name": "Attach to Maya 2020",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "/Applications/Autodesk/maya2020/Maya.app/Contents/bin/maya",
+			"processId": "${command:pickProcess}",
+			"MIMode": "lldb"
+		},
+		{ 
+			"name": "Attach to Maya 2022",
+			"type": "cppdbg",
+			"request": "attach",
+			"program": "/Applications/Autodesk/maya2022/Maya.app/Contents/bin/maya",
+			"processId": "${command:pickProcess}",
+			"MIMode": "lldb"
+		},
+	]
 }
