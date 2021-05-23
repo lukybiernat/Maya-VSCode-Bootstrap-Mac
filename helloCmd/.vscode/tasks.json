@@ -7,7 +7,7 @@
 	"echoCommand": true,
 	"tasks": [
 		{
-			"label": "clean",
+			"label": "Clean",
 			"args": [
 				"clean"
 			],
@@ -18,18 +18,18 @@
 			"problemMatcher": "$msCompile"
 		},
 		{
-			"label": "Build for Maya 2020",
+			"label": "Build for Maya 2022",
 			"options": {
 				"env": {
-					"mayaVersion": "2020",
-					"MAYA_LOCATION": "/Applications/Autodesk/maya2020/Maya.app/Contents",
-					"DEVKIT_LOCATION": "/Applications/Autodesk/maya2020",
+					"mayaVersion": "2022",
+					"MAYA_LOCATION": "/Applications/Autodesk/maya2022/Maya.app/Contents",
+					"DEVKIT_LOCATION": "/Applications/Autodesk/maya2022",
 					"XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
 					"TARGET_CLANG_VERSION": "version 12.0.0",
 					"XCODE_PATH": "/Applications/Xcode.app/Contents/Developer/",
 					"PROJECT_NAME": "${workspaceRootFolderName}",
-					"INITIALIZE_SYMBOL": "__Z16initializePluginN8Autodesk4Maya16OpenMaya202000007MObjectE",
-					"UNINITIALIZE_SYMBOL" : "__Z18uninitializePluginN8Autodesk4Maya16OpenMaya202000007MObjectE",
+					"INITIALIZE_SYMBOL": "__Z16initializePluginN8Autodesk4Maya16OpenMaya202200007MObjectE",
+					"UNINITIALIZE_SYMBOL" : "__Z18uninitializePluginN8Autodesk4Maya16OpenMaya202200007MObjectE",
 					"CXX_LIB_FLAG" : "-std=c++11 -stdlib=libc++"
 				}
 			},
@@ -54,18 +54,18 @@
 			}
 		},
 		{
-			"label": "Build for Maya 2022",
+			"label": "Build for Maya 2020",
 			"options": {
 				"env": {
-					"mayaVersion": "2022",
-					"MAYA_LOCATION": "/Applications/Autodesk/maya2022/Maya.app/Contents",
-					"DEVKIT_LOCATION": "/Applications/Autodesk/maya2022",
+					"mayaVersion": "2020",
+					"MAYA_LOCATION": "/Applications/Autodesk/maya2020/Maya.app/Contents",
+					"DEVKIT_LOCATION": "/Applications/Autodesk/maya2020",
 					"XCODE_PLATFORM_SDK_PATH": "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk",
 					"TARGET_CLANG_VERSION": "version 12.0.0",
 					"XCODE_PATH": "/Applications/Xcode.app/Contents/Developer/",
 					"PROJECT_NAME": "${workspaceRootFolderName}",
-					"INITIALIZE_SYMBOL": "__Z16initializePluginN8Autodesk4Maya16OpenMaya202200007MObjectE",
-					"UNINITIALIZE_SYMBOL" : "__Z18uninitializePluginN8Autodesk4Maya16OpenMaya202200007MObjectE",
+					"INITIALIZE_SYMBOL": "__Z16initializePluginN8Autodesk4Maya16OpenMaya202000007MObjectE",
+					"UNINITIALIZE_SYMBOL" : "__Z18uninitializePluginN8Autodesk4Maya16OpenMaya202000007MObjectE",
 					"CXX_LIB_FLAG" : "-std=c++11 -stdlib=libc++"
 				}
 			},
